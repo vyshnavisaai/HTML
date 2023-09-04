@@ -1,0 +1,14 @@
+body{
+    background-image: url(111.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: blue;
+    font-size: 25px;
+    text-align: justify;
+    letter-spacing: 3px;
+    word-spacing: 6px;
+background-size: 100%;}
+p{
+    border-style: dashed double dotted solid;
+    border-color: red green cyan orange;
+}
