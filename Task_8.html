@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 8</title>
+    <style>
+        tr{
+            background-color: rgb(36, 36, 62);
+            color: yellow;
+            
+        }
+        td{
+            height: 35px;
+        }
+        #a{
+            width: 150px;
+
+        }
+        #b{
+            width: 230px;
+        }
+        
+    </style>
+</head>
+<body>
+    <center>
+    <form action="action_page.php">
+        <table   style="border-color:  rgb(36, 36, 62); border-collapse: collapse;">
+            <tr style="background-color: orange;">
+                <td style="color: white;" colspan="2">Sign Up </td>
+            </tr>
+            <tr>
+                <td id="a" style="text-align: right;"><label for="fname">First Name &nbsp;</label></td>
+                <td id="b"><input type="text" id="fname" placeholder="Enter First Name"></td>
+            </tr>
+            <tr>
+                <td id="a" style="text-align: right;"><label for="lname">Last Name &nbsp;</label></td>
+                <td id="b"><input type="text" id="lname" placeholder="Enter Last Name"></td>
+            </tr>
+            <tr>
+                <td id="a" style="text-align: right;"><label for="dob">Date of Birth &nbsp;</label></td>
+                <td id="b"><select name="dob" id="dob">
+                        <option value="Date">Date</option>
+                    </select>
+                    <select  name="dob" id="dob">
+                        <option value="Month">Month</option> 
+                        <option value="Month">January</option>
+                        <option value="Month">February</option> 
+                        <option value="Month">March</option> 
+                        <option value="Month">April</option> 
+                        <option value="Month">May</option> 
+                        <option value="Month">June</option> 
+                        <option value="Month">July</option> 
+                        <option value="Month">August</option> 
+                        <option value="Month">September</option> 
+                        <option value="Month">October</option> 
+                        <option value="Month">November</option> 
+                        <option value="Month">December</option> 
+ 
+                    </select> 
+                    <select name="dob" id="dob">
+                            <option value="Year">Year</option>  
+                </select></td>
+            </tr>
+            <tr>
+                <td id="a" style="text-align: right;"><label for="gender">Gender &nbsp;</label></td>
+                <td id="b"><input type="radio" id="gender" name="gender">Male
+                <input type="radio" id="gender" name="gender">Female</td>
+            </tr>
+            <tr>
+                <td id="a" style="text-align: right;"><label for="country">Country &nbsp;</label></td>
+                <td id="b">
+                    <select name="dob" id="dob">
+                        <option value="country">Country</option>  
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td id="a" style="text-align: right;"><label for="email">E-mail &nbsp;</label></td>
+                <td><input type="text" placeholder="Enter E-mail" id="email"></td>
+            </tr>
+            <tr>
+                <td id="a" style="text-align: right;"><label for="phone">Phone &nbsp;</label></td>
+                <td><input type="text" id="phone" placeholder="Enter phone"></td>
+            </tr>
+            <tr>
+                <td id="a" style="text-align: right;"><label for="pwd">Password &nbsp;</label></td>
+                <td><input type="text" id="pwd"></td>
+            </tr>
+            <tr>
+                <td id="a" style="text-align: right;"><label for="cpwd">Confirm Password &nbsp;</label></td>
+                <td><input type="text" id="cpwd"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                <INput type="checkbox" ID="agree">I Agree to the Terms of use</INput></td>
+            </tr>
+            <TR style="background-color: orange;">
+                <TD></TD>
+                <TD style="text-align: right;"><INput type="submit" style="color: white; height: 25px; background-color: rgb(58, 166, 58); border: 0px;"></INput>
+                    <INPut style="height: 25px; color: white; background-color: red; border: 0px;" type="button" value="Cancel"> &nbsp;</INPut></TD>
+            </TR>
+        </table>
+    </form>
+</center>
+    
+</body>
+</html>
