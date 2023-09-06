@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 9</title>
+    <style>
+        table{
+           
+            border-spacing: 10px;
+            padding: 10px;
+        }
+        td{
+            background-color: rgb(63, 192, 243);
+        }
+        
+        
+        
+            
+    </style>
+</head>
+<body>
+    <center>
+        <form action="action_page.php">
+        <table   style=" width: 420px;">
+        
+            <tr>
+                <td  colspan="2" style="text-align: center;font-size: 30px;  background-color: rgb(239, 239, 105);color: red;"> 
+                 Registration Form
+                </td>
+            </tr>
+            <tr>
+                <td><Label for="name">Enter Name</Label></td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td><Label for="pwd">Enter Password</Label></td>
+                <td><input type="text" name="pwd"></td>
+            </tr>
+            <tr>
+                <td><Label for="add">Enter Address</Label></td>
+                <td><textarea name="" id="" cols="21" rows="4"></textarea></td>
+            </tr>
+            <tr>
+                <td><Label for="game">Select Game</Label></td>
+                <td><input type="checkbox" name="game">
+                <Label for="game">Hockey</Label><br>
+                <input type="checkbox" name="game">
+                <Label for="game">Football</Label><br>
+                <input type="checkbox" name="game">
+                <Label for="game">Badminton</Label><br>
+                <input type="checkbox" name="game">
+                <Label for="game">Cricket</Label><br>
+                <input type="checkbox" name="game">
+                <Label for="game">Volleyball</Label></td>
+            </tr>
+            <tr>
+                <td><Label for="gender">Gender</Label></td>
+                <td><input type="radio" name="game">
+                <Label for="gender">Male</Label>
+                <input type="radio" name="game">
+                <Label for="gender">Male</Label><br>    
+            </tr>
+            <tr>
+                <td><Label for="age">Select ur age</Label></td>
+                <td><select name="age" id="age">
+                    <option value="age">Select</option>
+                    <option value="age">16</option>
+                    <option value="age">17</option>
+                    <option value="age">18</option>
+                    <option value="age">19</option>
+                    <option value="age">20</option>
+                    <option value="age">21</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><Label for="photo">Select Photo</Label></td>
+                <td><input type="file"></td></tr>
+            </tr>
+            <tr>
+                <td style="text-align: center;" colspan="2"><input style="height: 27px;width: 90px;" type="button" value="Click Me">
+                <input style="height: 27px;width: 90px" type="button" value="Reset">
+                <input style="height: 27px;" type="button" value="Submit Form"></td>
+            
+            </tr>
+       
+    </table>
+</form>
+</center>
+</body>
+</html>
