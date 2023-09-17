@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class abc{
+            show(){
+                document.write("first method <br>")
+            }
+        }
+        class xyz extends abc{
+            show(){
+                super.show()
+                document.write("second method")
+            }
+        }
+        var pqr= new xyz()
+        pqr.show()
+    </script>
+</body>
+</html>
