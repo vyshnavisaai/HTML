@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 12</title>
+    <style>
+        #z{
+            display: flex;
+            height: 80px;
+            position:fixed;
+            width: 100%;
+            background-color: white;
+        }
+
+        .y{
+            border: 0px;
+            border-radius: 9px;
+            background-image: linear-gradient(to right, #FB9739, #F25C04);
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+            height: 45px;
+            width: 180px;
+        }
+
+        li{
+            display: inline;
+        }
+
+        .a{
+            padding-left: 25px;
+            color: black;
+            
+        }
+        .a:hover{
+            color: #F98423;
+        }
+
+        a{
+            text-decoration: none;
+            color: rgb(6, 12, 69);
+       }
+
+       .b{
+            color: black;
+            text-decoration: none;
+            font-weight:500;
+       }
+
+       a:hover{
+            color: #F98423;
+       }
+
+       .p{
+            font-size: 90px;
+            color: white;
+            text-align: center;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif   ;
+            margin-top: 180px;
+       }
+
+       .q{
+            color: white;
+            width: 850px;
+            text-align: center;
+            font-weight: bold;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size:18px;
+       }
+
+       button{
+            font-size: 10px;
+       }
+
+       select{
+            border: 0px;
+            font-weight: 500;
+       }
+
+       h2{
+            text-align: center;
+            margin-top: 30px;
+            font-weight: 900;
+       }
+       
+       .dropdown:hover>.dropdown-menu {
+            display: block;
+           
+       }
+       #w:hover{
+            color: #F98423;
+       }
+
+       .box{
+            text-align:center;
+            font-size: 18px;
+            font-weight: bold;
+            height: 300px;
+            width: 200px;
+            margin-left: 50px;
+            border-radius:0px 20px 20px 20px;
+       }
+       
+
+
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body>
+    <div id="z">
+        <div style="display: flex;">
+            <div>
+            <ol>
+                <li>
+                    <img height="60px" src="images/futuraaa.png" alt="">
+                </li>
+            </ol>
+            </div>
+            <div style="margin-left: 120px;">
+            <ol style="margin-top: 25px;float: right;">
+                <li class="a"><a class="b" style="color: #51267B;" href="">Home</a></li>
+                <li class="a"><a class="b" href="">About</a></li>
+                <li class="dropdown">
+                        <button id="w"
+                          class="btn btn-primary dropdown-toggle"
+                          type="button"
+                          style="margin-top: -5px;background-color: white;color: black;font-weight: 500;padding-left: 27px; border: 0px;"
+                          
+                          
+                        >
+                        Internships                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <li><a class="dropdown-item" href="#"><img src="images/fut2.png" height="20px" alt="">Python-Django Full Stack</a></li>
+                          <li><a class="dropdown-item" href="#"><img src="images/fut1.png" height="20px" alt="">Mern Full Stack</a></li>
+                          <li><a class="dropdown-item" href="#"><img src="images/fut3.png" height="20px" alt="">Flutter Mobile App</a></li>
+                          <li><a class="dropdown-item" href="#"><img src="images/fut4.png" height="20px" alt="">UI/UX</a></li>
+                        </ul>
+                      
+                  </li>
+                <li class="a"><a class="b" href="">Placements</a></li>
+                <li class="a"><a class="b" href="">Career</a></li>
+                <li class="a"><a class="b" href="">Contact</a></li>
+            </ol>
+            </div>
+            <div>
+            <ol style="margin-top: 15px;">
+                <li class="a"><button class="y">Get in Touch &nbsp;➔</button></li>
+            </ol>
+            </div>
+        </div>
+    </div>
+    <div style="width: 100%;height: 670px; background-size: cover; background-image: url(images/bgbg.png);">
+        <br><br>
+        <center>
+        <p class="p">Enable.Transform.Accelerate.</p>
+        <P class="q">Be a part of FUTURA LABS, the best learning platform to transform you into a skilled and trained IT professional. We are one of Calicut's most trusted software training institutes, with the highest placement records. Join our hands to get your dream job and stand firm in the industry with all the confidence and proficiency.</P>
+        <button class="y" style="margin-top: 30px; ">Get in Touch &nbsp;🡫</button>
+        <button class="y"  style="margin-left: 10px;">Call: 799 442 00 46 🡫</button>
+        </center>
+        <div>
+            <li id="whstap" style="float: right;margin-right: 20px;position:fixed;right: 0; top: 440px;"><img src="images/png-image.png" height="60px" alt=""></li>
+        </div>
+    </div>
+
+    <div style="margin-top: 70px;">
+        <h2 style="font-weight: bold;font-size: 38px;color: rgb(59, 58, 58);">Our Process</h2>
+    </div>
+    <div style="display: flex; margin-top: 50px;">
+        <div class="box" style="background-color: #FFEDED;"><img src="images/box 1.png" height="130px" alt=""><p>Understanding & Creating a <br> Customised Training Plan for each  <br>student</p></div>
+        <div class="box" style="background-color: #F9E1EE;"><img src="images/box 2.png" height="130px" alt=""><p>Enabling the student for the Industry</p></div>
+        <div class="box" style="background-color: #C2E8FF;"><img src="images/box 3.png" height="130px" alt=""><p>Transforming the Student as a Professional</p></div>
+        <div class="box" style="background-color: #BBFFF4;"><img src="images/box 5.png" height="130px" alt=""><p>Accelerating the <br> Skills</p></div>
+        <div class="box" style="background-color: #E7E6FF;"><img src="images/box 4.png" height="130px" alt=""><p>Providing Placement Oppurtunities</p></div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
