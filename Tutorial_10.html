@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    @keyframes square{
+        0%{left:0px;
+        top:0px;}
+
+        25%{left:400 px;
+            top: 0; }
+        
+        50%{
+            left: 400px;
+            top: 400px;
+        }
+
+        75%
+        {
+            left: 0px;
+            top: 400px;
+        }
+        100%{
+            left: 0px;
+            top: 0px;
+        }
+        
+        
+    }
+    div{
+        animation-name: square;
+        animation-duration: 6s;
+        position: absolute;
+    }
+    </style>
+</head>
+<body>
+    <div style="margin: 0px; background-color: yellow; width: 200px;height: 200px;">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+</body>
+</html>
