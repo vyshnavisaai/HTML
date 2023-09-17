@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class area{
+            constructor(x,y){
+                this.x=x
+                this.y=y
+            }
+
+            area(){
+                var z=this.x*this.y
+                document.write(z+"<br>")
+            }
+        }
+        class text extends area{
+            area(){
+                area.area()
+                document.write("AREA CALCULATED")
+            }
+        }
+        var sq=new text(4,7)
+        sq.area()
+    </script>
+</body>
+</html>
