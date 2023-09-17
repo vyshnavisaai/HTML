@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="a"></h2>
+    <h2 id="b"></h2>
+    <h2 id="c"></h2>
+    <h2 id="d"></h2>
+
+    <script>
+        const animals=["dog","cat","horse","monkey","donkey"]
+        document.getElementById("a").innerHTML=animals
+        animals.pop()
+        document.getElementById("b").innerHTML=animals
+        delete(animals[0])
+        document.getElementById("c").innerHTML=animals
+        animals.splice(1,2)
+        document.getElementById("d").innerHTML=animals
+    </script>
+</body>
+</html>
