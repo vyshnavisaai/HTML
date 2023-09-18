@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p></p>
+    <script>
+        var animals=["cat","dog","lion","tiger","horse"]
+        document.write(animals+"<br><br>")
+        document.write(animals.slice(1,3)+"<br><br>")
+        document.write(animals+"<br><br>")
+        document.write(animals.reverse()+"<br><br>")
+        document.write(animals.sort()+"<br><br>")
+
+        var age=[33,76,12,45,21,15,18]
+        document.write(age.filter(check))
+
+        function check(age){
+            return age>+18
+        }
+    </script>
+</body>
+</html>
