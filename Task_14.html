@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            width: 50px;
+            height: 30px;
+            margin: 3px;
+            color:rgb(169, 71, 87);
+            background-color: rgb(250, 246, 246);
+            border-radius: 100%;
+            border: 0px;
+            font-weight: bold;
+        }
+        div{
+            text-align: center;
+            width: 250px;
+            background :linear-gradient(pink,rgb(197, 87, 106))
+        }
+        #display{
+            width: 225px;
+            height: 35px;
+            color:rgb(169, 71, 87);
+            font-weight: bolder;
+            border: 0px;
+            margin-top: 2px;
+            border-radius: 20px;
+            
+        }
+        body{
+            margin-left: 500px;
+            
+        }
+        h3{
+            margin-left: 2px;
+            font-family:'Courier New', Courier, monospace;
+            margin-bottom: 2px;
+            color: white;
+            background-color: rgb(169, 71, 87);
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div style="text-align: center;">
+        <h3 style=" "> Simple Calculator</h3>
+        <input type="text" id="display" style="">
+        <button onclick="toDisplay('7')">7</button>
+        <button onclick="toDisplay('8')">8</button>
+        <button onclick="toDisplay('9')">9</button>
+        <button onclick="toDisplay('+')">+</button>
+        <button onclick="toDisplay('4')">4</button>
+        <button onclick="toDisplay('5')">5</button>
+        <button onclick="toDisplay('6')">6</button>
+        <button onclick="toDisplay('-')">-</button>
+        <button onclick="toDisplay('1')">1</button>
+        <button onclick="toDisplay('2')">2</button>
+        <button onclick="toDisplay('3')">3</button>
+        <button onclick="toDisplay('*')">*</button>
+        <button onclick="toDisplay('0')">0</button>
+        <button onclick="result('7')">=</button>
+        <button onclick="clearDisplay()">C</button>
+        <button onclick="toDisplay('/')">/</button>
+
+    </div>
+
+    <script>
+        function toDisplay(value){
+            document.getElementById("display").value+=value;
+        }
+
+        function clearDisplay(){
+            document.getElementById("display").value=" ";
+        }
+
+        function result() {
+        var num1 = document.getElementById('display').value;
+        var num2 = eval(num1);
+        document.getElementById('display').value = num2;
+        }
+    </script>
+</body>
+</html>
