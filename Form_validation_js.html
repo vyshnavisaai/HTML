@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+</head>
+<body style="color: white;">
+    <div style="width: 250px;height: 100px; background-color: rgb(60, 60, 104);margin-top: 20px;">
+    <form action="html.php" name="login" method="post" onsubmit="return validateForm()">
+        <label style="margin-top: 110px;" for="name">Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" id="name" onkeyup="clear('nme')"><br>
+        
+        <span id="nme" style="color: red;"></span><br>
+        
+        <label for="pwd"  >Password</label></td>
+        <input type="password" id="pwd" onkeyup="clear('pass')"><br>
+        <span id="pass" style="color: red;"></span><br>
+    
+        <center>
+        <input type="submit" value="Login">
+    </center>
+    </form>
+</div>
+    <script>
+        function validateForm(){
+            var name=document.getElementById("name").value
+            var password=document.getElementById("pwd").value
+            
+            if(name==null || name==""){
+                document.getElementById("nme").innerHTML='enter the name'
+                return false
+            }
+            else if(password.length<6){
+                document.getElementById("pass").innerHTML="should contain more than 6 characters"
+                return false
+            }
+        }
+
+        function clear(sp){
+            document.getElementById(sp).innerHTML=""
+        }
+    </script>
+</body>
+</html>
