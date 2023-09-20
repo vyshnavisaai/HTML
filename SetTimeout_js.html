@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        setTimeout(function(){
+            document.write("The function is delayed..!!!<br>")
+        },3000)
+
+        setTimeout(()=>document.write("This is also delayed <BR>"),4000)
+        
+        function a(name){
+            document.write("Helloo"+name)
+        }
+        setTimeout(a,5000,"Vyshnavi")
+        </script>
+</body>
+</html>
