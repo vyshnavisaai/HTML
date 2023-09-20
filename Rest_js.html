@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        test(11,22,33,44);
+
+        function test(a,b,...rest){
+            console.log(a,b,...rest)
+        }
+        test1(11,22,33,44,55,66,77);
+
+        function test1(...rest){
+            console.log(...rest)
+        }
+    </script>
+</body>
+</html>
